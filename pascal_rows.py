@@ -14,7 +14,7 @@ def generate_rows(n: int) -> typing.Generator[tuple[int], None, None]:
     row = [1]
     for i in range(n):
         last_row = row
-        last_len= len(last_row)
+        last_len = len(last_row)
         yield tuple(row)
         row = [0] * (last_len + 1)
         for i in range(last_len + 1):
